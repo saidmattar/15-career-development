@@ -7,6 +7,7 @@ module.exports = class {
     this.front = null;
   }
 
+  //O(1)
   enqueue(val) {
     let node = new Node(val);
     let backNode;
@@ -26,6 +27,7 @@ module.exports = class {
     }
   }
 
+  //O(1)
   dequeue() {
     if(!this.front) return null;
     let temp = this.front;

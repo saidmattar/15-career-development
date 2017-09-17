@@ -4,7 +4,6 @@ const Queue = require('../lib/queue');
 require('jest');
 
 describe('queue methods', () => {
-
   describe('queue methods', () => {
     describe('enqueue', () => {
       test('should add new node to the end of a Queue', () => {
