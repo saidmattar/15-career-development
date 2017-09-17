@@ -21,6 +21,17 @@ module.exports = class {
   }
 
   pop(){
+    if(!this.top) return;
+    let result = this.top;
+    if(!result.next) {
+      this.top = null;
+      return this.top;
+    }
+  }
 
+  peek(node) {
+    if(!node.next) {
+      return node.val;
+    }
   }
 };
