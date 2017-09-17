@@ -25,6 +25,10 @@ module.exports = class {
   }
 
   dequeue() {
-
+    if(!this.front) return null;
+    let temp = this.front;
+    this.front = this.front.next;
+    temp.next = null;
+    return temp;
   }
 };
