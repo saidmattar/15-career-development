@@ -17,10 +17,10 @@ module.exports = class {
 
     node.next = this.top;
     this.top = node;
-    return;
+    return this.top;
   }
 
   pop(){
 
   }
-}
+};
