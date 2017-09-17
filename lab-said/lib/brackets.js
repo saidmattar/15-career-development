@@ -29,11 +29,11 @@ Queue.prototype.enqueue = function (val) {
 };
 
 Queue.prototype.dequeue = function () {
-  var poping = this.popS;
-  var pushing = this.pushS;
+  let poping = this.popS;
+  let pushing = this.pushS;
 
   if (poping.top) {
-    var deq = poping.pop();
+    let deq = poping.pop();
     console.log('Dequeing ' + deq + ' from stack.');
     return deq;
   }
@@ -44,7 +44,7 @@ Queue.prototype.dequeue = function () {
 };
 
 
-var q1 = new Queue();
+let q1 = new Queue();
 q1.enqueue(3);
 q1.enqueue(4);
 q1.enqueue(5);
