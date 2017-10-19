@@ -34,4 +34,4 @@ describe('Testing bracket methods', () => {
       });
     });
   });
-});
+}); 
